@@ -41,6 +41,7 @@
 										<div class="form-qq">
 											<div class="row">
 												<div class="col-md-10 col-md-push-1">
+													<p><a href="../#4">如收不到 重置邮件 ,点我 返回首页寻找管理员邮箱获取帮助</a></p>
 													<a>如收不到 重置邮件 ,你可以返回首页寻找管理员邮箱获取帮助</a>
 												</div>
 											</div>

@@ -119,7 +119,7 @@
 													<div class="col-md-10 col-md-push-1">
 														<label class="floating-label" for="code">喵粮(可选)</label>
 														<input class="form-control" id="code" type="text" value="{$code}">
-														<p><a href="/code" target=\"_blank\" >没有喵粮 ? 点我点我</a></p>
+														<p><a href="/code">没有喵粮 ? 点我点我</a></p>
 													</div>
 												</div>
 											</div>
