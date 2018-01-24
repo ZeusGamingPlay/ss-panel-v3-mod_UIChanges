@@ -29,8 +29,10 @@ class Pay
         return '
 						<form action="/user/alipay" method="get" target="_blank" >
 							<h3>支付宝充值</h3>
-							<p>充值金额: <input type="text" name="amount" /></p>
-							<input type="submit" value="提交" />
+							<p>充值金额: <input type="text" name="amount" />单次充值请不要低于10元(亲!手续费很贵滴)</p>
+							<input type="submit" value="充值确认" />
+							<p>如果快速支付出现问题请使用telegram联系客服！</p>
+										telegram: <a target="_blank" href="https://t.me/joinchat/AAAAAEGwkOODKeZjCGPKLw">telegram群</a> / <a target="_blank" href="https://telegram.org/">telegram客户端</a>
 						</form>
 ';
     }
