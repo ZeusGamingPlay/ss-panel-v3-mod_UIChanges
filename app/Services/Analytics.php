@@ -13,14 +13,20 @@ class Analytics
         return User::count();
     }
 
-    public function getCheckinUser()
+	public function getTotalUsera()
     {
-        return User::where('last_check_in_time', '>', 0)->count();
+        //return User::count();
+		return User::where('class', '=', 0)->count();
     }
-    
-    public function getTodayCheckinUser()
+	//修改
+	    public function getCheckinUser()
     {
-        return User::where('last_check_in_time', '>', strtotime('today'))->count();
+        return User::where('last_check_in_time', '>', 0)->where('class','=',0)->count();
+    }
+	
+	public function getTodayCheckinUser()
+    {
+        return User::where('last_check_in_time', '>', strtotime('today'))->where('class','=',0)->count();
     }
 
     public function getTrafficUsage()
