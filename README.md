@@ -12,6 +12,23 @@
 仟佰星云 模板在線查看：www.qianbai.ml
 
 -------------------
+```
+git clone https://github.com/wxlost/ss-panel-v3-mod_UIChanges.git tmp && mv tmp/.git . && rm -rf tmp && git reset --hard
+```
+```
+php composer.phar install
+```
+```
+php xcat initQQWry
+```
+```
+php xcat initdownload
+#php -n xcat initdownload
+#ln -s /opt/appnode/appnode-php56/root/usr/bin/php /usr/bin/php
+```
+```
+php -n xcat createAdmin
+```
 
 使用tips:
 
