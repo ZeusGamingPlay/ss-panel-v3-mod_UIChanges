@@ -367,6 +367,7 @@ class AuthController extends BaseController
             $user->ref_by = 0;
         }
         $user->expire_in=date("Y-m-d H:i:s", time()+Config::get('user_expire_in_default')*86400);
+		$user->class_expire=date("Y-m-d H:i:s", time()+Config::get('user_class_expire_default')*86400);
         $user->reg_date=date("Y-m-d H:i:s");
         $user->reg_ip=$_SERVER["REMOTE_ADDR"];
         $user->money=0;
