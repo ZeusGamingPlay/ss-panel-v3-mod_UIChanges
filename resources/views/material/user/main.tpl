@@ -371,7 +371,7 @@
 							</li>
                                <li>
 								<a href="/user/invite">
-									<i class="icon icon-lg">loyalty</i>&nbsp;火把喵粮
+									<i class="icon icon-lg">loyalty</i>&nbsp;热情喵粮
 								</a>
 							</li> 
 							

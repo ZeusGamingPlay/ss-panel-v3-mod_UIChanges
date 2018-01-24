@@ -23,8 +23,10 @@
 					<div class="card">
 						<div class="card-main">
 							<div class="card-inner">
-								<p>所有商品可以叠加购买，VIP时间会叠加</p>
-								<p>当前余额：{$user->money} 元</p>
+							<p><font color="red">1-3</font>为流量叠加包，<font color="red">1</font>级以上才可购买。其他均为独立套餐。</p>
+							<p><font color="red">如果更换套餐,剩余流量和有效期将会重置。</font></p>
+							<p><font color="blue">叠加购买的流量在等级到期后会被自动清空。</font></p>
+							<p>当前余额：<font color="red">{$user->money}</font> 元  / 如需充值请到<a href="/user/code">充值中心</a>充值！</p>
 							</div>
 						</div>
 					</div>
@@ -36,7 +38,7 @@
 						<table class="table ">
                             <tr>
 								
-                            <!--    <th>ID</th>    -->
+                                <th>ID</th>
                                 <th>套餐</th>
 								<th>价格</th>
 								<th>套餐详情</th>
@@ -48,7 +50,7 @@
                             {foreach $shops as $shop}
                             <tr>
 								
-                            <!--     <td>#{$shop->id}</td>    -->
+                                 <td>#{$shop->id}</td>
                                 <td>{$shop->name}</td>
 								<td>{$shop->price} 元</td>
                                 <td>{$shop->content()}</td>
@@ -102,6 +104,7 @@
 									<h2 class="modal-title">订单确认</h2>
 								</div>
 								<div class="modal-inner">
+									<p><font color="red">如您是更换套餐,那剩余流量和有效期将会重置。</font></p>					   
 									<p id="name">商品名称：</p>
 									<p id="credit">优惠额度：</p>
 									<p id="total">总金额：</p>
@@ -123,7 +126,7 @@
 					</div>
 					
 					{include file='dialog.tpl'}
-	
+				</section>	
 			</div>
 			
 			

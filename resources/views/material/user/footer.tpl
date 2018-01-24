@@ -1,6 +1,6 @@
 	<footer class="ui-footer">
 		<div class="container">
-			<marquee>&copy; {$config["appName"]}  <a href="/staff">STAFF</a> Google提供雲計算服務,伺服器位於台灣,遵守台灣法律法規<marquee> {if $config["enable_analytics_code"] == 'true'}{include file='analytics.tpl'}{/if}
+			<marquee>&copy; {$config["appName"]}  <a href="/staff">STAFF</a> 我！站长。很惨，请充钱安慰我，么么哒！<marquee> {if $config["enable_analytics_code"] == 'true'}{include file='analytics.tpl'}{/if}
 		</div>
 	</footer>
 
