@@ -21,28 +21,6 @@
 		<div class="container">
 			<section class="content-inner margin-top-no">
 				<div class="row">
-					<div class="col-lg-12 col-md-12">
-						<div class="card margin-bottom-no">
-							<div class="card-main">
-								<div class="card-inner">
-									<div class="card-inner">
-										<p class="card-heading">兑换码</p>
-										<i class="icon icon-lg">view_compact</i>&nbsp;仪表盘
-							<p>当前余额：{$user->money} 元</p>
-										<div class="form-group form-group-label">
-											<label class="floating-label" for="code">兑换码</label>
-											<input class="form-control" id="code" type="text">
-										</div>
-									</div>
-									<div class="card-action">
-										<div class="card-action-btn pull-left">
-											<button class="btn btn-flat waves-attach" id="code-update" ><span class="icon">check</span>&nbsp;兑换充值</button>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
               {if $pmw!=''}
 					<div class="col-lg-12 col-md-12">
 						<div class="card margin-bottom-no">
@@ -58,7 +36,27 @@
 					</div>	
 						
 					{/if}
-					
+					<div class="col-lg-12 col-md-12">
+						<div class="card margin-bottom-no">
+							<div class="card-main">
+								<div class="card-inner">
+									<div class="card-inner">
+									<i class="icon icon-lg">view_compact</i><p class="card-heading">兑换码</p>
+										<p>当前余额：{$user->money} 元</p>
+										<div class="form-group form-group-label">
+											<label class="floating-label" for="code">兑换码</label>
+											<input class="form-control" id="code" type="text">
+										</div>
+									</div>
+									<div class="card-action">
+										<div class="card-action-btn pull-left">
+											<button class="btn btn-flat waves-attach" id="code-update" ><span class="icon">check</span>&nbsp;兑换充值</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 					
 					<div class="col-lg-12 col-md-12">
 						<div class="card margin-bottom-no">
