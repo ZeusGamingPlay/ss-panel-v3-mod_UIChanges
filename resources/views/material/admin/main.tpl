@@ -77,6 +77,7 @@
 							<li><a href="/admin/announcement"><i class="icon icon-lg">announcement</i>&nbsp;公告管理</a></li>
 							<li><a href="/admin/ticket"><i class="icon icon-lg">question_answer</i>&nbsp;工单管理</a></li>
 							<li><a href="/admin/auto"><i class="icon icon-lg">flash_auto</i>&nbsp;下发命令</a></li>
+							<li><a href="/user"><i class="icon icon-lg">person</i>&nbsp;退出管理</a></li>
 						</ul>
 
 						<a class="waves-attach" data-toggle="collapse" href="#ui_menu_node">节点</a>
