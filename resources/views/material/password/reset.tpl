@@ -38,8 +38,14 @@
 											</div>
 										</div>
 										
-										
-									
+										<div class="form-qq">
+											<div class="row">
+												<div class="col-md-10 col-md-push-1">
+													<a>如收不到 重置邮件 ,你可以返回首页寻找管理员邮箱获取帮助</a>
+												</div>
+											</div>
+										</div>
+
 								</div>
 							</div>
 						</div>
@@ -68,7 +74,7 @@
     $(document).ready(function(){
         function reset(){
 			$("#result").modal();
-            $("#msg").html("sending, please wait....");
+            $("#msg").html("正在发送，请稍候....");
             $.ajax({
                 type:"POST",
                 url:"/password/reset",

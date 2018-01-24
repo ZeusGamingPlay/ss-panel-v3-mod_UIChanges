@@ -18,15 +18,16 @@
               <!--首页开始-->
                           <div class="content">
 							<div class="inner">
-								<h1>邀请码管理</h1>
+								<h1>喵粮管理</h1>
+								<p>{$config["appName"]} 的 喵粮.不定时发放。  <a class="waves-attach" href="https://t.me/joinchat/Ek0o3EG4IYrxpMCu-ax2Kg">加入本站telegram</a> /  <a class="waves-attach" href="https://telegram.me/transfortelegram">telegram软件汉化</a></p>
                           </div>
                         </div>
-								<p>{$config["appName"]} 的邀请码(点击邀请码直接注册)</p>
+								<p>{$config["appName"]} 的喵粮(点击喵粮直接注册)</p>
                                    <div class="table-wrapper">
 										<table>
 											<thead>
 												<tr>
-													<th>邀请码</th>
+													<th>喵粮</th>
                                                   <th>状态</th>
 												</tr>
 											</thead>
@@ -53,7 +54,7 @@
             
                      <!-- 版权底部 -->
                       <footer id="footer">
-                   <p class="copyright">&copy;2015-2017 仟佰星云</p>
+                   <p class="copyright">&copy;2015-2017 {$config["appName"]}</p>
                       </footer>
               <!-- 版权结束 -->
 			 </div>
