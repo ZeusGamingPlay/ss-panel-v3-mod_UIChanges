@@ -16,6 +16,14 @@ $System_Config['sessionDriver'] = 'cookie';
 $System_Config['cacheDriver'] = 'cookie';
 $System_Config['tokenDriver'] = 'db';
 
+//-------------自用改参数
+//true false
+// 被邀请用户购买任意套餐后,邀请人获得的邀请码数量--diy参数
+$System_Config['inviteNumback'] = '1';
+
+#用户签到后.账号过期时间延迟多少（天）--diy参数
+$System_Config['user_sign_in_default']='15';
+//------------------------------
 //$System_Config['version'] = '<a href="https://www.zhaoj.in">Glzjin</a> mod-2016042210000';
 
 // mu key 用于校验ss-go mu的请求,半角逗号分隔
@@ -51,18 +59,22 @@ $System_Config['redis_database'] = '0';
 $System_Config['redis_password']="";
 
 # mailgun
-$System_Config['mailgun_key'] = '';
-$System_Config['mailgun_domain'] = '';
-$System_Config['mailgun_sender'] = '';
+$System_Config['mailgun_key'] = '';//KEY
+$System_Config['mailgun_domain'] = '';//域名
+$System_Config['mailgun_sender'] = '';//发件人邮箱
 
 # smtp
 $System_Config['smtp_host'] = '';
-$System_Config['smtp_username'] = '';
-$System_Config['smtp_port'] = '';
-$System_Config['smtp_name'] = '';
-$System_Config['smtp_sender'] = '';
+$System_Config['smtp_username'] = '';//发件人邮箱
+$System_Config['smtp_port'] = '';//465
+$System_Config['smtp_name'] = '';//发件人名字
+$System_Config['smtp_sender'] = '';//发件人邮箱
 $System_Config['smtp_passsword'] = '';
 $System_Config['smtp_ssl'] = 'true';
+
+# sendgrid
+$System_Config['sendgrid_key'] = '';
+$System_Config['sendgrid_sender'] = '';//发件人邮箱
 
 # aws
 $System_Config['aws_access_key_id'] = '';
@@ -80,8 +92,10 @@ $System_Config['enable_duoshuo']='false';
 
 
 
+#等级过期时间，在注册时设置。（天）
+$System_Config['user_class_expire_default']='1';
 #用户过期时间，在注册时设置。（天）
-$System_Config['user_expire_in_default']='3650';
+$System_Config['user_expire_in_default']='15';
 
 #Radius数据库设置
 $System_Config['radius_db_host']='';
@@ -101,7 +115,7 @@ $System_Config['duoshuo_apptoken']="";
 
 
 #节点离线设置
-$System_Config['node_offline_warn']='true';
+$System_Config['node_offline_warn']='false';
 
 #异地登陆提示
 $System_Config['login_warn']='false';
@@ -115,7 +129,7 @@ $System_Config['pacp_offset']='-20000';
 $System_Config['pacpp_offset']='-20000';
 
 #测速周期/h
-$System_Config['Speedtest_duration']='6';
+$System_Config['Speedtest_duration']='0';
 
 
 #随机分组，注册时随机分配到的分组，多个分组请用英文半角逗号分隔。
@@ -171,7 +185,7 @@ $System_Config['jump_delay']='1800';
 $System_Config['enable_invite_code']='false';
 
 #是否启用邮箱验证码
-$System_Config['enable_email_verify']='true';
+$System_Config['enable_email_verify']='false';
 
 #邮箱验证码有效期
 $System_Config['email_verify_ttl']='3600';
@@ -218,7 +232,7 @@ $System_Config['enable_account_expire_reset']='false';
 #账户到期时重置为的流量值，GB
 $System_Config['enable_account_expire_reset_traffic']='0';
 
-#购买时是否重置流量
+#购买时是否重置流量-作废,以商品参数为准
 $System_Config['enable_bought_reset']='false';
 
 #账户到期之后是否会删除账户
@@ -288,10 +302,6 @@ $System_Config['telegram_qrcode']='zxing_local';
 
 #Telegram 机器人请求Key，随意设置，由大小写英文和数字组成，复杂一些，用于校验请求，更新这个参数之后请 php xcat setTelegram
 $System_Config['telegram_request_token']='';
-
-# sendgrid
-$System_Config['sendgrid_key'] = '';
-$System_Config['sendgrid_sender'] = '';
 
 
 #支付系统
