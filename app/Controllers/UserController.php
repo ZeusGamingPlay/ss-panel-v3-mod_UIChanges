@@ -921,23 +921,31 @@ class UserController extends BaseController
 
     public function doInvite($request, $response, $args)
     {
+      $gennum = $request->getParam('gennum');
         $n = $this->user->invite_num;
         if ($n < 1) {
             $res['ret'] = 0;
-            $res['msg'] = "失败";
+         $res['msg'] = "失败";
             return $response->getBody()->write(json_encode($res));
         }
-        for ($i = 0; $i < $n; $i++) {
+        //for ($i = 0; $i < $n; $i++) {
+      if ($n < $gennum | $gennum <= 0) {
+         $res['ret'] = 0;
+         $res['msg'] = "数量输入有误。";
+         return $response->getBody()->write(json_encode($res));
+      }
+         for ($i = 0; $i < $gennum; $i++) {
             $char = Tools::genRandomChar(32);
             $code = new InviteCode();
             $code->code = $char;
             $code->user_id = $this->user->id;
             $code->save();
         }
-        $this->user->invite_num = 0;
+        //$this->user->invite_num = 0;
+      $this->user->invite_num = $n-$gennum;
         $this->user->save();
         $res['ret'] = 1;
-        $res['msg'] = "生成成功。";
+      $res['msg'] = "喵粮制造完毕。";
         return $this->echoJson($response, $res);
     }
 
@@ -1110,6 +1118,15 @@ class UserController extends BaseController
             }
         }
 
+		$level=$shop->level();
+ 		$user=$this->user;
+ 		if($user->class<$level)
+ 		{
+ 			$res['ret'] = 0;
+ 			$res['msg'] = "亲!您的等级不够,请先购买套餐升级";
+ 			return $response->getBody()->write(json_encode($res));
+ 		}
+ 
         $price=$shop->price*((100-$credit)/100);
         $user=$this->user;
 
@@ -1618,13 +1635,17 @@ class UserController extends BaseController
         }
 
         if (!$this->user->isAbleToCheckin()) {
-            $res['msg'] = "您似乎已经续命过了...";
+            $res['msg'] = "您似乎已经签到过了...";
             $res['ret'] = 1;
             return $response->getBody()->write(json_encode($res));
         }
         $traffic = rand(Config::get('checkinMin'), Config::get('checkinMax'));
         $this->user->transfer_enable = $this->user->transfer_enable + Tools::toMB($traffic);
         $this->user->last_check_in_time = time();
+        if ($this->user->class == 0) {//如果是0级用户签到
+        $this->user->class_expire = date("Y-m-d H:i:s",time()+Config::get('user_sign_in_default')*86400);//等级有效期
+        $this->user->expire_in = date("Y-m-d H:i:s",time()+Config::get('user_sign_in_default')*86400*2);//账户有效期
+        }
         $this->user->save();
         $res['msg'] = sprintf("获得了 %u MB流量.", $traffic);
         $res['ret'] = 1;
