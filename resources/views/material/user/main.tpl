@@ -306,7 +306,6 @@
 				<a class="dropdown-toggle padding-left-no padding-right-no" data-toggle="dropdown">
 				{if $user->isLogin}
 					<span class="access-hide">{$user->user_name}</span>
-              	    <span class="icon icon-cd margin-right">account_circle</span>
 					<span class="avatar avatar-sm"><img alt="alt text for John Smith avatar" src="{$user->gravatar}"></span>
 					</a>
 					<ul class="dropdown-menu dropdown-menu-right">
@@ -320,8 +319,7 @@
 					</ul>
 				{else}
 					<span class="access-hide">未登录</span>
-             		 <span class="icon icon-lg margin-right">account_circle</span>
-					<!-- <span class="avatar avatar-sm"><img alt="alt text for John Smith avatar" src="/theme/material/images/users/avatar-001.jpg"></span>  -->
+					<span class="avatar avatar-sm"><img alt="alt text for John Smith avatar" src="{$user->gravatar}"></span>
 					
 					<ul class="dropdown-menu dropdown-menu-right">
 						<li>
