@@ -371,7 +371,7 @@
 							</li>
                                <li>
 								<a href="/user/invite">
-									<i class="icon icon-lg">loyalty</i>&nbsp;邀请码
+									<i class="icon icon-lg">loyalty</i>&nbsp;火把喵粮
 								</a>
 							</li> 
 							
@@ -403,9 +403,9 @@
 							</li>
 							
 							<li>
-								<a href="/user/lookingglass">
+							<!--	<a href="/user/lookingglass">
 									<i class="icon icon-lg">visibility</i>&nbsp;延迟检测
-								</a>
+								</a>  -->
 								<a href="/user/announcement">
 									<i class="icon icon-lg">start</i>&nbsp;使用教程
 								</a>
