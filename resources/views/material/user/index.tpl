@@ -22,8 +22,7 @@
 								<div class="card-main">
 									<div class="card-inner margin-bottom-no">
                                      <p class="card-heading"> <i class="icon icon-md">notifications_active</i>公告栏</p>
-										<p>telegram: <a target="_blank" href="https://t.me/joinchat/AAAAAEGwkOODKeZjCGPKLw">TG群</a> / 
-										<a target="_blank" href="https://t.me/OneManBot">TG_Bot</a> / 
+										<p>telegram: <a target="_blank" href="https://t.me/OneManBot">TG_Bot</a> / 
 										<a target="_blank" href="https://telegram.org/">TG客户端</a> / 
 										<a target="_blank" href="https://t.me/zh_CN">TG汉化</a> / 
 										<a target="_blank" href="https://t.me/ACL4SSR">TG-ACL去广告)</a></p>
@@ -153,7 +152,7 @@
 														执行完毕以后就可以到路由器的设置面板里随意选择 Shadowsocks 服务器进行连接了。</p>
 													</div>
                                                     <div class="tab-pane fade" id="all_ssr_game">
-														 <p><span class="icon icon-lg text-white">looks_one</span><a href="/ssr-download/SSTap.7z">点击我下载</a></p>
+														 <p><span class="icon icon-lg text-white">looks_one</span><a href="/c-download/SSTap.7z">点击我下载</a></p>
                                                        <p><span class="icon icon-lg text-white">looks_two</span> 安装，期间会安装虚拟网卡，请点击允许或确认</p>
                                                        <p><span class="icon icon-lg text-white">looks_3</span> 打开桌面程序SSTap</p>
                                                        <p><span class="icon icon-lg text-white">looks_4</span> 齿轮图标-SSR订阅-SSR订阅管理添加以下订阅链接即可</p>
@@ -294,14 +293,14 @@
 										<dl class="dl-horizontal">
 											<p><dt>帐号等级</dt>
                                               {if $user->class!=0}
-											<dd><!--{$user->class}--><i class="icon icon-md t4-text">stars</i>&nbsp;VIP</dd>
+											<dd>{$user->class}级 <i class="icon icon-md t4-text">stars</i>&nbsp;VIP</dd>
                                           {else}
-                                              <dd><!--{$user->class}--><i class="icon icon-md t4-text">stars</i>&nbsp;免费</dd>
+                                              <dd><!--{$user->class}--><i class="icon icon-md t4-text">stars</i>&nbsp;免费试用</dd>
                                               {/if}
                                           </p>
                                           {if $user->class!=0}
                                           	 <p><dt>Telegram(VIP可见)</dt>
-											<dd><!--{$user->class}--><i class="icon icon-md t4-text">stars</i>&nbsp;<a href="//t.me/joinchat/XXXXXXXXXX" target="view_window">点击加入TG群</a></dd>
+											<dd><!--{$user->class}--><i class="icon icon-md t4-text">stars</i>&nbsp;<a href="//t.me/joinchat/AAAAAEGwkOODKeZjCGPKLw" target="view_window">点击加入TG群</a></dd>
                                           {else}
                                              
                                               {/if}
@@ -349,7 +348,7 @@
 										<div class="card-action-btn pull-left">
 											{if $user->isAbleToCheckin() }
 												<p id="checkin-btn">
-													<button id="checkin" class="btn btn-brand btn-flat waves-attach"><span class="icon">check</span>&nbsp;点我签到&nbsp;<span class="icon">screen_rotation</span>&nbsp;或者摇动手机签到</button>
+													<button id="checkin" class="btn btn-brand btn-flat waves-attach"><span class="icon">check</span>&nbsp;点我签到&nbsp;<span class="icon">screen_rotation</span>&nbsp;或者摇动手机签到/或添加TG机器人签到</button>
 												</p>
 											{else}
 												<p><a class="btn btn-brand disabled btn-flat waves-attach" href="#"><span class="icon">check</span>&nbsp;今日已签到</a></p>
@@ -462,7 +461,7 @@
 							</div>
 
 
-						{if $enable_duoshuo=='true'}
+						<!--{if $enable_duoshuo=='true'}
 
 							<div class="card">
 								<div class="card-main">
@@ -490,7 +489,7 @@
 								</div>
 							</div>
 
-						{/if}
+						{/if}-->
 
 						{include file='dialog.tpl'}
 
