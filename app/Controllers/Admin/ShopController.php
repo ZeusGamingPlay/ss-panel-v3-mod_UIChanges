@@ -67,6 +67,11 @@ class ShopController extends AdminController
             $content["reset_exp"]=$request->getParam('reset_exp');
         }
 
+         if($request->getParam('level')!=0)
+ 		{
+ 			$content["level"]=$request->getParam('level');
+ 		}
+
         $shop->content=json_encode($content);
 
 
@@ -138,6 +143,11 @@ class ShopController extends AdminController
         if ($request->getParam('reset_exp')!=0) {
             $content["reset_exp"]=$request->getParam('reset_exp');
         }
+
+         if($request->getParam('level')!=0)
+ 		{
+ 			$content["level"]=$request->getParam('level');
+ 		}
 
         $shop->content=json_encode($content);
 
