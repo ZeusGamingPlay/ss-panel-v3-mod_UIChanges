@@ -22,6 +22,11 @@
 								<div class="card-main">
 									<div class="card-inner margin-bottom-no">
                                      <p class="card-heading"> <i class="icon icon-md">notifications_active</i>公告栏</p>
+										<p>telegram: <a target="_blank" href="https://t.me/joinchat/AAAAAEGwkOODKeZjCGPKLw">TG群</a> / 
+										<a target="_blank" href="https://t.me/OneManBot">TG_Bot</a> / 
+										<a target="_blank" href="https://telegram.org/">TG客户端</a> / 
+										<a target="_blank" href="https://t.me/zh_CN">TG汉化</a> / 
+										<a target="_blank" href="https://t.me/ACL4SSR">TG-ACL去广告)</a></p>
 										<!--<p>其他公告请到<a href="/user/announcement"/>公告面板</a>查看。</p>-->
 										{if $ann != null}
 										<p>{$ann->content}</p>

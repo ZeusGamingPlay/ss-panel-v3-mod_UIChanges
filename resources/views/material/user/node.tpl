@@ -25,11 +25,13 @@
 						<div class="card margin-bottom-no">
 							<div class="card-main">
 								<div class="card-inner">
-									<a href="javascript:void(0);" onClick="urlChange('guide',0,0,0)">如不知道如何查看节点的详细信息和二维码，请点我。</a>
-									<p>新注册用户账号有效期7天，可免费使用<code>七天</code>洛杉矶免费节点，不计流量，其余节点正常统计流量，要使用高速和游戏节点请购买等级1套餐，请勿在任何地方公开节点地址！</p>
-									<p>流量比例为2即使用1MB按照2MB流量记录记录结算。</p>
-									<p>标有太阳标志的为等级1节点。</p>
-
+									<h4>注意!</h4>
+									<p><p>{$config["node_ver_time1"]}{$config["node_ver_time2"]}{$config["node_ver_time3"]}</p></p>
+									<p>等级为0的只能看到免费节点！如需高级等级，请到<a href="/user/shop">商城</a>购买！</p>
+									<p>具体的SSR混淆设置在<a href="/user/edit"><font color="orangered">修改资料</font></a>里设置，可选兼容性后缀是 <font color="blue">_compatible</font></p>
+									<p>菜单分两级，点击某个节点名称展开这个节点的方式后，可以点击这个方式查看具体的配置信息。</p>
+									<p></p>
+									<a href="javascript:void(0);" onClick="urlChange('guide',0,0,0)">如果您不知道如何查看节点的详细信息和二维码，请点我。</a>
 								</div>
 							</div>
 						</div>
@@ -931,7 +933,7 @@ function urlChange(id,is_mu,rule_id) {
 	{
 		var doc = document.getElementById('infoifram').contentWindow.document;
 		doc.open();
-		doc.write('<img src="https://www.zhaoj.in/wp-content/uploads/2016/07/1469595156fca44223cf8da9719e1d084439782b27.gif" style="width: 100%;height: 100%; border: none;"/>');
+		doc.write('<img src="/top.gif" style="width: 100%;height: 100%; border: none;"/>');
 		doc.close();
 	}
 	else
