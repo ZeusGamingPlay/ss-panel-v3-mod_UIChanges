@@ -22,7 +22,7 @@
                           </div>
                         </div>
 								<p>{$config["appName"]} 的喵粮(点击喵粮直接注册)</p>
-								<p>不定时发放  <a class="waves-attach" href="https://t.me/joinchat/Ek0o3EG4IYrxpMCu-ax2Kg">加入本站telegram</a> /  <a class="waves-attach" href="https://telegram.me/transfortelegram">telegram软件汉化</a></p>
+								<p><a class="waves-attach" href="https://t.me/joinchat/Ek0o3EG4IYrxpMCu-ax2Kg">加入本站telegram</a> /  <a class="waves-attach" href="https://telegram.me/transfortelegram">telegram软件汉化</a></p>
                                    <div class="table-wrapper">
 										<table>
 											<thead>

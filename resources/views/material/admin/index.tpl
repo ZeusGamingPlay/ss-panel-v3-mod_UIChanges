@@ -20,6 +20,7 @@
 							<div class="card-main">
 								<div class="card-inner">
 									<p>下面是系统运行情况简报。</p>
+									<p>未付费:{$sts->getTotalUsera()}人 / 已付费: {($sts->getTotalUser())-($sts->getTotalUsera())}人</p>
 								</div>
 							</div>
 						</div>
@@ -46,7 +47,6 @@
 													fontFamily: "Impact",
 													fontWeight: "normal"
 												},
-
 												legend:{
 													verticalAlign: "bottom",
 													horizontalAlign: "center"
@@ -75,7 +75,6 @@
 												}
 												]
 											});
-
 											chart.render();
 										</script>
 										
@@ -100,7 +99,6 @@
 													fontFamily: "Impact",
 													fontWeight: "normal"
 												},
-
 												legend:{
 													verticalAlign: "bottom",
 													horizontalAlign: "center"
@@ -135,7 +133,6 @@
 												}
 												]
 											});
-
 											chart.render();
 										</script>
 										
@@ -166,7 +163,6 @@
 													fontFamily: "Impact",
 													fontWeight: "normal"
 												},
-
 												legend:{
 													verticalAlign: "bottom",
 													horizontalAlign: "center"
@@ -194,7 +190,6 @@
 												}
 												]
 											});
-
 											chart.render();
 										</script>
 										
@@ -219,7 +214,6 @@
 													fontFamily: "Impact",
 													fontWeight: "normal"
 												},
-
 												legend:{
 													verticalAlign: "bottom",
 													horizontalAlign: "center"
@@ -250,7 +244,6 @@
 												}
 												]
 											});
-
 											chart.render();
 										</script>
 										
