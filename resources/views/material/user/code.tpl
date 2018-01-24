@@ -41,7 +41,7 @@
 							<div class="card-main">
 								<div class="card-inner">
 									<div class="card-inner">
-									<i class="icon icon-lg">view_compact</i><p class="card-heading">兑换码</p>
+									<p class="card-heading">兑换码</p>
 										<p>当前余额：{$user->money} 元</p>
 										<div class="form-group form-group-label">
 											<label class="floating-label" for="code">兑换码</label>
