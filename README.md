@@ -42,9 +42,9 @@ php -n xcat createAdmin
 
    放置位置：/public/images/prefix
    
-   命名标准：节点全部名称：波兰 VIP节点2 - 10G带宽
+   命名标准：节点全部名称：0-0_美国节点
    
-            图标文件命名：波兰 VIP节点2.jpg
+            图标文件命名：0-0
             
 5、web IM：右下角客服系统代码位置：/resources/views/material/user/main.tpl     481行
 
