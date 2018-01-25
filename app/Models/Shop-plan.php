@@ -151,7 +151,7 @@ class Shop extends Model
         $content = json_decode($this->attributes['content'], true);
         $content_text="";
         $ser_shop_id = $this->id;//商城物品ID
-        $ser_shop_plan = $this->id;//商城物品归属套餐
+        $ser_shop_plan = $this->plan;//商城物品归属套餐
         $user_class = $user->class;//用户当前等级
         $user_plan = $user->plan;//用户当前归属套餐
         

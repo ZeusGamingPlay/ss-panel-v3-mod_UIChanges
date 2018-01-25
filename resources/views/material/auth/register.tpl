@@ -113,7 +113,7 @@
 										
 										
 										
-									<!--	{if $enable_invite_code == 'true'}  -->
+										{if $enable_invite_code == 'true'}
 											<div class="form-group form-group-label">
 												<div class="row">
 													<div class="col-md-10 col-md-push-1">
@@ -123,7 +123,7 @@
 													</div>
 												</div>
 											</div>
-								<!--		{/if}   -->
+										{/if}
 										
 										{if $geetest_html != null}
 											<div class="form-group form-group-label">

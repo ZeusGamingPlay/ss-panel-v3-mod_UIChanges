@@ -345,6 +345,9 @@ CREATE TABLE `ss_node`  (
   INDEX `node_ip`(`node_ip`) USING BTREE
 ) ENGINE = MyISAM AUTO_INCREMENT = 81 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
+INSERT INTO `onepvp`.`ss_node`(`id`, `name`, `type`, `server`, `method`, `info`, `status`, `sort`, `custom_method`, `traffic_rate`, `node_class`, `node_speedlimit`, `node_connector`, `node_bandwidth`, `node_bandwidth_limit`, `bandwidthlimit_resetday`, `node_heartbeat`, `node_ip`, `node_group`, `custom_rss`, `mu_only`) VALUES (1, '统一验证登陆', 0, 'onepvp.com', 'radius', '统一登陆验证', '可用', 999, 0, 1, 0, 0.00, 0, 0, 0, 0, 0, NULL, 0, 0, 0);
+INSERT INTO `onepvp`.`ss_node`(`id`, `name`, `type`, `server`, `method`, `info`, `status`, `sort`, `custom_method`, `traffic_rate`, `node_class`, `node_speedlimit`, `node_connector`, `node_bandwidth`, `node_bandwidth_limit`, `bandwidthlimit_resetday`, `node_heartbeat`, `node_ip`, `node_group`, `custom_rss`, `mu_only`) VALUES (2, 'VPN 统一流量结算', 0, 'onepvp.com', 'radius', 'VPN 统一流量结算', '可用', 999, 0, 1, 0, 0.00, 0, 0, 0, 0, 0, NULL, 0, 0, 0);
+
 -- ----------------------------
 -- Table structure for ss_node_info
 -- ----------------------------
