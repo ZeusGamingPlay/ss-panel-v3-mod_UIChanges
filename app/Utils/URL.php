@@ -297,7 +297,7 @@ class URL
             $mu_user->obfs_param = $user->getMuMd5();
             $mu_user->protocol_param = $user->id.":".$user->passwd;
             $user = $mu_user;
-            $node_name .= " - ".$mu_port." 单多";
+            $node_name .= "-".$mu_port."单多";
         }
         if($is_ss) {
             if(!URL::SSCanConnect($user)) {
