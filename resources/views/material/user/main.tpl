@@ -11,7 +11,8 @@
 	<!-- css -->
 	<link href="/theme/material/css/base.min.css" rel="stylesheet">
 	<link href="/theme/material/css/project.min.css" rel="stylesheet">
-	<link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!--<link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
+	<link href="/theme/material/css/googleapis-fonts/icon?family=Material+Icons" rel="stylesheet">
 
  <style>
     body {
