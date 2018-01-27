@@ -92,8 +92,8 @@
                                                           <p><span class="icon icon-lg text-white">looks_3</span> 运行程序</p>
 															<!--<code>(1)</code>下载<a href="/user/getpcconf?is_mu=0&is_ss=0">普通端口</a>或者<a href="/user/getpcconf?is_mu=1&is_ss=0">这个（单端口多用户）</a>，右键小飞机 服务器 -- 从配置文件导入服务器，选择这个文件<br>
 															<code>(2)(推荐)</code>点击<a class="copy-text" data-clipboard-text="{$ssr_url_all}"> 这里（普通端口）</a>或者<a class="copy-text" data-clipboard-text="{$ssr_url_all}"> 这个(单端口多用户）</a>，然后右键小飞机 -- 从剪贴板复制地址<br> -->
-															<p> <span class="icon icon-lg text-white">looks_4</span> 任务栏右下角右键纸飞机图标--服务器订阅--SSR服务器订阅设置，将订阅链接设置为下面的地址，确定之后再更新 SSR 服务器订阅。</p> 
-															<p> <span class="icon icon-lg text-white">looks_5</span> 然后选择一个合适的服务器，代理规则选“绕过局域网和大陆”，然后即可上网。</p> 
+															<p> <span class="icon icon-lg text-white">looks_4</span> 任务栏右下角右键纸飞机图标--服务器订阅--SSR服务器订阅设置，将订阅链接设置为下面的地址，确定之后再点击 更新 SSR 服务器订阅(不通过代理)。</p> 
+															<p> <span class="icon icon-lg text-white">looks_5</span> 然后右键小飞机--服务器--{$config["appName"]}--选择一个合适的服务器，代理规则选“绕过局域网和大陆”，然后即可上网。</p> 
 														<p><span class="icon icon-lg text-white">flash_auto</span> 单端口订阅地址：<code>{$baseUrl}/link/{$ssr_sub_token}?mu=1</code><br>
 														<!--	单端口多用户端口订阅地址：<code>{$baseUrl}/link/{$ssr_sub_token}?mu=1</code>  -->
 														</p>
@@ -115,9 +115,9 @@
                                                       <p><a href="/Course.html#Linux">点击这里查看Linux傻瓜式教程</a></p> 
 													</div>
 													<div class="tab-pane fade" id="all_ssr_ios">
-                                                        <p><span class="icon icon-lg text-white">looks_one</span> 切换<code>App Store</code>账号-ID:<code>XXXXXXX@icloud.com</code> 密码<code>XXXXXXXX</code>注意特殊符号与大小写,如果显示需要解锁账号，请提交工单或邮件。（千万不要试图登陆iCloud，会上传您的照片与通讯录到这个账户上）</p>
-                                                         <p><span class="icon icon-lg text-white">looks_two</span> 商店搜索<code>Shadowrocket</code>下载安装</p>
-                                                      	<p><span class="icon icon-lg text-white">looks_3</span> 安装完成后切换回您自己的账号。（请务必切换回您自己的账户）</p>
+                                                    <!--    <p><span class="icon icon-lg text-white">looks_one</span> 切换<code>App Store</code>账号-ID:<code>XXXXXXX@icloud.com</code> 密码<code>XXXXXXXX</code>注意特殊符号与大小写,如果显示需要解锁账号，请提交工单或邮件。（千万不要试图登陆iCloud，会上传您的照片与通讯录到这个账户上）</p>
+													-->     <p><span class="icon icon-lg text-white">looks_two</span> 商店搜索<code>Shadowrocket</code>下载安装</p>
+                                                    <!--  	<p><span class="icon icon-lg text-white">looks_3</span> 安装完成后切换回您自己的账号。（请务必切换回您自己的账户）</p>	-->
                                                       <!--  <p>两种方式导入所有节点</p> 
                                                         <p>1、在 Safari 中点击 <a href="{$ssr_url_all}">这个（普通端口）</a>或者<a href="{$ssr_url_all_mu}">这个（单端口多用户）</a>，然后点击确定，就可以批量添加节点。</p> -->
 														<p><span class="icon icon-lg text-white">looks_3</span> 打开Shadowrocket软件后，点击右上角<span class="icon icon-lg text-white">add</span>，添加类型为<code>Subscribe</code>，URL填写以下地址即可自动更新节点</p>
@@ -132,7 +132,7 @@
                                                       <p><span class="icon icon-lg text-white">filter_2</span> 打开App，点击右下角的<span class="icon icon-lg text-white">add</span>号图标</p>
                                                         <p><span class="icon icon-lg text-white">filter_3</span> 添加/升级 SSR订阅</p>
                                                           <p><span class="icon icon-lg text-white">filter_4</span> 添加订阅地址，输入以下订阅地址后确定</p>
-                                                      <p><span class="icon icon-lg text-white">filter_5</span> 订阅出现系统自带的与仟佰星云，请把系统自带的无效订阅左滑删除（自带影响订阅更新速度）</p>
+                                                      <p><span class="icon icon-lg text-white">filter_5</span> 订阅出现系统自带的与{$config["appName"]}，请把系统自带的无效订阅左滑删除（自带影响订阅更新速度）</p>
                                                        <p><span class="icon icon-lg text-white">filter_6</span> 点击确定并升级</p>
                                                       <p><span class="icon icon-lg text-white">filter_7</span> 选择任意节点</p>
                                                       <p><span class="icon icon-lg text-white">filter_8</span> 路由选择：略过区域网路以及中国大陆</p>
@@ -326,7 +326,7 @@
                                            <p><dt>在线设备数</dt>
 											<dd><i class="icon icon-md">phonelink</i>&nbsp;{$user->online_ip_count()}</dd></p>
 											<p><dt>余额</dt>
-											<dd><i class="icon icon-md">monetization_on</i>&nbsp;{$user->money} CNY</dd></p>
+											<dd><i class="icon icon-md">payment</i>&nbsp;{$user->money} CNY</dd></p>
 											<p><dt>上次使用</dt>
                                               {if $user->lastSsTime()!="从未使用喵"}
 											<dd><i class="icon icon-md">event</i>&nbsp;{$user->lastSsTime()}</dd>
