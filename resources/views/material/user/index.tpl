@@ -89,12 +89,12 @@
 														{$ssr_url_all_mu = URL::getAllUrl($pre_user, 1, 0)}
 														<p><span class="icon icon-lg text-white">looks_one</span><a href="/ssr-download/ssr-win.7z"> 点击我下载</a></p>
                                                           <p><span class="icon icon-lg text-white">looks_two</span> 解压至任意磁盘</p>
-                                                          <p><span class="icon icon-lg text-white">looks_3</span> 运行程序</p>
+                                                          <p><span class="icon icon-lg text-white">looks_3</span> 运行程序(以下三选一)</p>
 															<code>(1)</code>下载<!--<a href="/user/getpcconf?is_mu=0&is_ss=0">普通端口</a>或者--><a href="/user/getpcconf?is_mu=1&is_ss=0">这个（单端口多用户）</a>，右键小飞机 服务器 -- 从配置文件导入服务器，选择这个文件<br>
-															<code>(2)(推荐)</code>点击<!--<a class="copy-text" data-clipboard-text="{$ssr_url_all}"> 这里（普通端口）</a>或者--><a class="copy-text" data-clipboard-text="{$ssr_url_all}"> 这个(单端口多用户）</a>，然后右键小飞机 -- 从剪贴板复制地址<br>
-															<p> <span class="icon icon-lg text-white">looks_4</span> 任务栏右下角右键纸飞机图标--服务器订阅--SSR服务器订阅设置，将订阅链接设置为下面的地址，确定之后再点击 更新 SSR 服务器订阅(不通过代理)。</p> 
+															<code>(2)</code>点击<!--<a class="copy-text" data-clipboard-text="{$ssr_url_all}"> 这里（普通端口）</a>或者--><a class="copy-text" data-clipboard-text="{$ssr_url_all}"> 这个(单端口多用户）</a>，然后右键小飞机 -- 从剪贴板复制地址<br>
+															<code>(3)(推荐)任务栏右下角右键纸飞机图标--服务器订阅--SSR服务器订阅设置，将订阅链接设置为下面的地址，确定之后再点击 更新 SSR 服务器订阅(不通过代理)。<br>
 															<p> <span class="icon icon-lg text-white">looks_5</span> 然后右键小飞机--服务器--{$config["appName"]}--选择一个合适的服务器，代理规则选“绕过局域网和大陆”，然后即可上网。</p> 
-														<p><span class="icon icon-lg text-white">flash_auto</span> 单端口订阅地址：<code>{$baseUrl}/link/{$ssr_sub_token}?mu=1</code><br>
+														<p><span class="icon icon-lg text-white">flash_auto</span> 订阅地址：<code>{$baseUrl}/link/{$ssr_sub_token}?mu=1</code><br>
 														<!--	单端口多用户端口订阅地址：<code>{$baseUrl}/link/{$ssr_sub_token}?mu=1</code>  -->
 														</p>
                                                        <p><a href="/user/announcement">点击这里查看Windows傻瓜式教程</a></p> 
@@ -106,7 +106,7 @@
                                                       		<p><span class="icon icon-lg text-white">looks_4</span> 打开Launchapad里的ShadowsocksX</p>
                                                       		<p><span class="icon icon-lg text-white">looks_5</span> 菜单栏的纸飞机图标-服务器-服务器订阅填入以下订阅地址，更新后出现您的节点</p>
                                                       <p><span class="icon icon-lg text-white">looks_6</span> 菜单栏的纸飞机图标-打开shadowsocks</p><!-- ，然后下载<a href="/user/getpcconf?is_mu=0&is_ss=0">普通端口</a>或者<a  href="/user/getpcconf?is_mu=1&is_ss=0">这个（单端口多用户）</a>，运行程序，小飞机上右键 服务器列表 子菜单 的 “导入服务器配置文件...” 导入这个文件，然后选择一个合适的服务器，更新一下PAC，然后开启系统代理即可上网。</p>	-->													
-                                        				<p><span class="icon icon-lg text-white">flash_auto</span> 单端口订阅地址：<code>{$baseUrl}/link/{$ssr_sub_token}?mu=1</code><br>
+                                        				<p><span class="icon icon-lg text-white">flash_auto</span> 订阅地址：<code>{$baseUrl}/link/{$ssr_sub_token}?mu=1</code><br>
 														<!--	单端口多用户端口订阅地址：<code>{$baseUrl}/link/{$ssr_sub_token}?mu=1</code>   -->
                                                       </p>
                                                       <p><a href="/user/announcement">点击这里查看Mac傻瓜式教程</a></p> 
@@ -123,7 +123,7 @@
 														<p><span class="icon icon-lg text-white">looks_3</span> 打开Shadowrocket软件后，点击右上角<span class="icon icon-lg text-white">add</span>，添加类型为<code>Subscribe</code>，URL填写以下地址即可自动更新节点</p>
                                                       <p><span class="icon icon-lg text-white">looks_4</span> 选择任意节点点击连接，然后点击allow后解锁指纹</p>
                                                       <p><span class="icon icon-lg text-white">looks_5</span> 注意：第一次连接可能不能用，导入后程序退出并重新打开程序后连接即可！</p>
-														<p><span class="icon icon-lg text-white">flash_auto</span> 单端口订阅地址：<code>{$baseUrl}/link/{$ssr_sub_token}?mu=1</code><br>
+														<p><span class="icon icon-lg text-white">flash_auto</span> 订阅地址：<code>{$baseUrl}/link/{$ssr_sub_token}?mu=1</code><br>
 														<!--	单端口多用户端口订阅地址：<code>{$baseUrl}/link/{$ssr_sub_token}?mu=1</code>   -->
                                                       <p><a href="/user/announcement">点击这里查看iOS傻瓜式教程</a></p> 
 													</div>
@@ -140,7 +140,7 @@
                                                  <!--       <p>两种方式导入所有节点</p>
                                                          <p>1、在手机上默认浏览器中点击<a href="{$ssr_url_all}">这个链接（普通端口）</a>或者<a href="{$ssr_url_all_mu}">这个链接（单端口多用户）</a>，然后点击确定，批量添加完节点，然后路由选择<code>绕过局域网和大陆</code>，右上角开启就可以上网了。同时提供一个 ACL (看您的需要)地址，<a href="/link/{$acl_token}">长按复制地址</a>到客户端里应用即可。</p> 
                                                          <p>手机上默认浏览器中点击<a href="{$ssr_url_all}">这个链接（普通端口）</a>，同时提供一个 ACL (看您的需要)地址，<a href="/link/{$acl_token}">长按复制地址</a>到客户端里路由设置后更新即可。</p>-->													
-															<p><span class="icon icon-lg text-white">flash_auto</span> 单端口订阅地址：<code>{$baseUrl}/link/{$ssr_sub_token}?mu=1</code><br>
+															<p><span class="icon icon-lg text-white">flash_auto</span> 订阅地址：<code>{$baseUrl}/link/{$ssr_sub_token}?mu=1</code><br>
 														<!--	单端口多用户端口订阅地址：<code>{$baseUrl}/link/{$ssr_sub_token}?mu=1</code>  -->
                                                       <p><a href="/user/announcement">点击这里查看Android傻瓜式教程</a></p>
 													</div>
