@@ -92,7 +92,7 @@
                                                           <p><span class="icon icon-lg text-white">looks_3</span> 运行程序(以下三选一)</p>
 															<code>(1)</code>下载<!--<a href="/user/getpcconf?is_mu=0&is_ss=0">普通端口</a>或者--><a href="/user/getpcconf?is_mu=1&is_ss=0">这个（单端口多用户）</a>，右键小飞机 服务器 -- 从配置文件导入服务器，选择这个文件<br>
 															<code>(2)</code>点击<!--<a class="copy-text" data-clipboard-text="{$ssr_url_all}"> 这里（普通端口）</a>或者--><a class="copy-text" data-clipboard-text="{$ssr_url_all}"> 这个(单端口多用户）</a>，然后右键小飞机 -- 从剪贴板复制地址<br>
-															<code>(3)(推荐)任务栏右下角右键纸飞机图标--服务器订阅--SSR服务器订阅设置，将订阅链接设置为下面的地址，确定之后再点击 更新 SSR 服务器订阅(不通过代理)。<br>
+															<code>(3)(推荐)</code>任务栏右下角右键纸飞机图标--服务器订阅--SSR服务器订阅设置，将订阅链接设置为下面的地址，确定之后再点击 更新 SSR 服务器订阅(不通过代理)。<br>
 															<p> <span class="icon icon-lg text-white">looks_5</span> 然后右键小飞机--服务器--{$config["appName"]}--选择一个合适的服务器，代理规则选“绕过局域网和大陆”，然后即可上网。</p> 
 														<p><span class="icon icon-lg text-white">flash_auto</span> 订阅地址：<code>{$baseUrl}/link/{$ssr_sub_token}?mu=1</code><br>
 														<!--	单端口多用户端口订阅地址：<code>{$baseUrl}/link/{$ssr_sub_token}?mu=1</code>  -->
