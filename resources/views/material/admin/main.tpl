@@ -77,7 +77,7 @@
 							<li><a href="/admin"><i class="icon icon-lg">business_center</i>&nbsp;系统概览</a></li>
 							<li><a href="/admin/announcement"><i class="icon icon-lg">announcement</i>&nbsp;公告管理</a></li>
 							<li><a href="/admin/ticket"><i class="icon icon-lg">question_answer</i>&nbsp;工单管理</a></li>
-							<li><a href="/admin/auto"><i class="icon icon-lg">flash_auto</i>&nbsp;下发命令</a></li>
+						<!--	<li><a href="/admin/auto"><i class="icon icon-lg">flash_auto</i>&nbsp;下发命令</a></li> -->
 							<li><a href="/user"><i class="icon icon-lg">person</i>&nbsp;退出管理</a></li>
 						</ul>
 
@@ -111,10 +111,9 @@
 							<li><a href="/admin/shop"><i class="icon icon-lg">shop</i>&nbsp;商品</a></li>
 							<li><a href="/admin/coupon"><i class="icon icon-lg">card_giftcard</i>&nbsp;优惠码</a></li>
 							<li><a href="/admin/bought"><i class="icon icon-lg">shopping_cart</i>&nbsp;购买记录</a></li>
-                            <li><a href="/user/invite"><i class="icon icon-lg">loyalty</i>&nbsp;邀请码</a></li> 
 						</ul>
 
-						<li><a href="/user"><i class="icon icon-lg">person</i>&nbsp;用户中心</a></li>
+					<!--	<li><a href="/user"><i class="icon icon-lg">person</i>&nbsp;用户中心</a></li> -->
 					</li>
 
 
