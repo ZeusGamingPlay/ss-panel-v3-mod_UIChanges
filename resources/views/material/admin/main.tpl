@@ -98,13 +98,6 @@
 							<li><a href="/admin/alive"><i class="icon icon-lg">important_devices</i>&nbsp;在线IP</a></li>
 						</ul>
 
-						<a class="waves-attach" data-toggle="collapse" href="#ui_menu_detect">审计</a>
-						<ul class="menu-collapse collapse in" id="ui_menu_detect">
-							<li><a href="/admin/detect"><i class="icon icon-lg">account_balance</i>&nbsp;审计规则</a></li>
-							<li><a href="/admin/detect/log"><i class="icon icon-lg">assignment_late</i>&nbsp;审计记录</a></li>
-						</ul>
-
-
 						<a class="waves-attach" data-toggle="collapse" href="#ui_menu_trade">交易</a>
 						<ul class="menu-collapse collapse in" id="ui_menu_trade">
 							<li><a href="/admin/code"><i class="icon icon-lg">code</i>&nbsp;充值码{if $config['enable_donate']=='true'}与捐赠{/if}</a></li>
@@ -113,6 +106,11 @@
 							<li><a href="/admin/bought"><i class="icon icon-lg">shopping_cart</i>&nbsp;购买记录</a></li>
 						</ul>
 
+						<a class="waves-attach" data-toggle="collapse" href="#ui_menu_detect">审计</a>
+						<ul class="menu-collapse collapse in" id="ui_menu_detect">
+							<li><a href="/admin/detect"><i class="icon icon-lg">account_balance</i>&nbsp;审计规则</a></li>
+							<li><a href="/admin/detect/log"><i class="icon icon-lg">assignment_late</i>&nbsp;审计记录</a></li>
+						</ul>
 					<!--	<li><a href="/user"><i class="icon icon-lg">person</i>&nbsp;用户中心</a></li> -->
 					</li>
 
