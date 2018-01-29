@@ -109,10 +109,10 @@
                                         				<p><span class="icon icon-lg text-white">flash_auto</span> 订阅地址：<code>{$baseUrl}/link/{$ssr_sub_token}?mu=1</code><br>
 														<!--	单端口多用户端口订阅地址：<code>{$baseUrl}/link/{$ssr_sub_token}?mu=1</code>   -->
                                                       </p>
-                                                      <p><a href="/user/announcement">点击这里查看Mac傻瓜式教程</a></p> 
+                                                      <p><a href="/user/announcement#all_ssr_mac">点击这里查看Mac傻瓜式教程</a></p> 
 													</div>
                                                   <div class="tab-pane fade" id="all_ssr_linux">
-                                                      <p><a href="/Course.html#Linux">点击这里查看Linux傻瓜式教程</a></p> 
+                                                      <p><a href="/user/announcement#all_ssr_linux">点击这里查看Linux傻瓜式教程</a></p> 
 													</div>
 													<div class="tab-pane fade" id="all_ssr_ios">
 														<p><code>下载方式(1)</code> 登录<code>美区</code>账户,商店搜索<code>Shadowrocket</code>下载安装</p>
@@ -347,7 +347,7 @@
 										<div class="card-action-btn pull-left">
 											{if $user->isAbleToCheckin() }
 												<p id="checkin-btn">
-													<button id="checkin" class="btn btn-brand btn-flat waves-attach"><span class="icon">check</span>&nbsp;点我签到&nbsp;<span class="icon">screen_rotation</span>&nbsp;或者摇动手机签到/或添加TG机器人签到</button>
+													<button id="checkin" class="btn btn-brand btn-flat waves-attach"><span class="icon">check</span>&nbsp;点我签到&nbsp;<span class="icon">screen_rotation</span>&nbsp;或者摇动手机签到</br>或添加TG机器人签到</button>
 												</p>
 											{else}
 												<p><a class="btn btn-brand disabled btn-flat waves-attach" href="#"><span class="icon">check</span>&nbsp;今日已签到</a></p>
