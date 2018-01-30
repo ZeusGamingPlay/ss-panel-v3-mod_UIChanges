@@ -291,21 +291,23 @@ class LinkController extends BaseController
 
     public static function GetPcConf($user, $is_mu = 0, $is_ss = 0)
     {
+    	$ssr_sub_token = LinkController::GenerateSSRSubCode($user->id, $without_mu);
         $string='
 	{
-	"index" : 0,
+	"index" : 10,
 	"random" : false,
-	"sysProxyMode" : 0,
+	"sysProxyMode" : 3,
 	"shareOverLan" : false,
 	"bypassWhiteList" : false,
 	"localPort" : 1080,
 	"localAuthPassword" : "'.Tools::genRandomChar(26).'",
 	"dns_server" : "",
 	"reconnectTimes" : 4,
-	"randomAlgorithm" : 0,
+	"randomAlgorithm" : 4,
+	"randomInGroup" : true,
 	"TTL" : 60,
 	"connect_timeout" : 5,
-	"proxyRuleMode" : 1,
+	"proxyRuleMode" : 2,
 	"proxyEnable" : false,
 	"pacDirectGoProxy" : false,
 	"proxyType" : 0,
@@ -320,6 +322,9 @@ class LinkController extends BaseController
 	"sameHostForSameTarget" : true,
 	"keepVisitTime" : 180,
 	"isHideTips" : true,
+	"nodeFeedURL" : "'.Config::get('baseUrl').'/link/'.$ssr_sub_token.'?mu='.$without_mu.'",
+	"nodeFeedGroup" : "'.Config::get('appName').'",
+	"nodeFeedAutoUpdate" : true,
 	"token" : {
 
 	},
