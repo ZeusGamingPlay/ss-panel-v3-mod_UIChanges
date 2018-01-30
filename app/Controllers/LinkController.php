@@ -291,20 +291,19 @@ class LinkController extends BaseController
 
     public static function GetPcConf($user, $is_mu = 0, $is_ss = 0)
     {
-    	$ssr_sub_token = LinkController::GenerateSSRSubCode($user->id, $without_mu);
+        $ssr_sub_token = LinkController::GenerateSSRSubCode($user->id, $is_mu);
         $string='
 	{
-	"index" : 10,
+	"index" : 0,
 	"random" : false,
 	"sysProxyMode" : 3,
 	"shareOverLan" : false,
-	"bypassWhiteList" : false,
 	"localPort" : 1080,
 	"localAuthPassword" : "'.Tools::genRandomChar(26).'",
 	"dns_server" : "",
 	"reconnectTimes" : 4,
-	"randomAlgorithm" : 4,
-	"randomInGroup" : true,
+    "randomAlgorithm" : 0,
+    "randomInGroup" : false,
 	"TTL" : 60,
 	"connect_timeout" : 5,
 	"proxyRuleMode" : 2,
@@ -321,10 +320,14 @@ class LinkController extends BaseController
 	"autoBan" : false,
 	"sameHostForSameTarget" : true,
 	"keepVisitTime" : 180,
-	"isHideTips" : true,
-	"nodeFeedURL" : "'.Config::get('baseUrl').'/link/'.$ssr_sub_token.'?mu='.$without_mu.'",
-	"nodeFeedGroup" : "'.Config::get('appName').'",
-	"nodeFeedAutoUpdate" : true,
+    "isHideTips" : true,
+    "nodeFeedAutoUpdate" : false,
+    "serverSubscribes" : [
+		{
+			"URL" : "'.Config::get('baseUrl').'/link/'.$ssr_sub_token.'?mu='.$is_mu.'",
+			"Group" : "'.Config::get('appName').'"
+		}
+    ],
 	"token" : {
 
 	},
@@ -350,9 +353,10 @@ class LinkController extends BaseController
                                         "password"=>$item['passwd'],
                                         "tcp_over_udp"=>false,
                                         "udp_over_tcp"=>false,
-                                        "group"=>$item['group'],
+                                        "group"=>Config::get('appName'),
                                         "protocol"=>$item['protocol'],
                                         "protoparam"=>$item['protocol_param'],
+                                        "protocolparam"=>$item['protocol_param'],
                                         "obfs_udp"=>false,
                                         "enable"=>true));
         }
