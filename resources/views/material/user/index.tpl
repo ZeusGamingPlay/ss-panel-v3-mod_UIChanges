@@ -87,7 +87,7 @@
                                                         {$user = URL::getSSRConnectInfo($pre_user)}
 														{$ssr_url_all = URL::getAllUrl($pre_user, 0, 0)}
 														{$ssr_url_all_mu = URL::getAllUrl($pre_user, 1, 0)}
-														<p><span class="icon icon-lg text-white">looks_one</span><a href="/ssr-download/ssr-win.7z"> 点击我下载</a></p>
+														<p><span class="icon icon-lg text-white">looks_one</span><a href="/c-download/ssr-win.7z"> 点击我下载</a></p>
                                                           <p><span class="icon icon-lg text-white">looks_two</span> 解压至任意磁盘</p>
                                                           <p><span class="icon icon-lg text-white">looks_3</span> 运行程序(以下三选一)</p>
 															<code>(1)</code>下载<!--<a href="/user/getpcconf?is_mu=0&is_ss=0">普通端口</a>或者--><a href="/user/getpcconf?is_mu=1&is_ss=0">这个（单端口多用户）</a>，右键小飞机 服务器 -- 从配置文件导入服务器，选择这个文件<br>
@@ -127,7 +127,7 @@
                                                       <p><a href="/user/announcement">点击这里查看iOS傻瓜式教程</a></p> 
 													</div>
 													<div class="tab-pane fade" id="all_ssr_android">
-														<p><span class="icon icon-lg text-white">filter_1</span><a href="/ssr-download/ssr-android.apk"> 点击我下载</a>并安装</p>
+														<p><span class="icon icon-lg text-white">filter_1</span><a href="/c-download/ssr-android.apk"> 点击我下载</a>并安装</p>
                                                       <p><span class="icon icon-lg text-white">filter_2</span> 打开App，点击右下角的<span class="icon icon-lg text-white">add</span>号图标</p>
                                                         <p><span class="icon icon-lg text-white">filter_3</span> 添加/升级 SSR订阅</p>
                                                           <p><span class="icon icon-lg text-white">filter_4</span> 添加订阅地址，输入以下订阅地址后确定</p>
