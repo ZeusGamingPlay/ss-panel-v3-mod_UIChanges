@@ -321,7 +321,7 @@ class LinkController extends BaseController
 	"sameHostForSameTarget" : true,
 	"keepVisitTime" : 180,
     "isHideTips" : true,
-    "nodeFeedAutoUpdate" : false,
+    "nodeFeedAutoUpdate" : true,
     "serverSubscribes" : [
 		{
 			"URL" : "'.Config::get('baseUrl').'/link/'.$ssr_sub_token.'?mu='.$is_mu.'",
