@@ -96,7 +96,7 @@
 							<ul>
 							  <li><a href="/c-download/ssr-win.7z" class="icon fa-windows"><span class="label"></span> Windows</a></li>
 							  <li><a href="/ssr-download/ssr-mac.dmg" class="icon fa-apple"><span class="label">Mac</span> Mac</a></li>
-							  <li><a href="/c-download/ssr-android.apk" class="icon fa-android"><span class="label">Android</span> Android</a></li>
+							  <li><a href="/ssr-download/ssr-android.apk" class="icon fa-android"><span class="label">Android</span> Android</a></li>
 							  <li><a href="/c-download/BarcodeScanner-4.7.6.apk" class="icon fa-camera"><span class="label">Android 二维码扫描插件</span> Android 二维码扫描插件</a></li>
 							  <li><a href="/c-download/Shadowrocket(i4toinstall).ipa" class="icon fa-apple"><span class="label">iOS</span> iOS</a></li>
                               <li><a href="/c-download/SSTap.7z" class="icon fa-gamepad"><span class="label">Win游戏专用</span> Win游戏专用</a></li>
