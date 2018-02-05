@@ -137,7 +137,6 @@
 								</div>
 						</article> 
                       <!--全部标签结束-->
-                      
                               </div>
                      <!-- 版权底部 -->
                       <footer id="footer">
@@ -147,6 +146,8 @@
 			 </div>
                 <!-- BG -->
 			<div id="bg"></div>
+			<!-- 统计代码 -->
+            {if $config["enable_analytics_code"] == 'true'}{include file='analytics.tpl'}{/if}			
 	        	<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
