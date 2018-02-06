@@ -23,6 +23,8 @@ $System_Config['inviteNumback'] = '1';
 
 #用户签到后.账号过期时间延迟多少（天）--diy参数
 $System_Config['user_sign_in_default']='15';
+#是否允许用户注销账户
+$System_Config['enable_kill']='true';
 //------------------------------
 //$System_Config['version'] = '<a href="https://www.zhaoj.in">Glzjin</a> mod-2016042210000';
 
