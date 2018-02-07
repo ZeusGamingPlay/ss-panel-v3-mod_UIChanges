@@ -30,7 +30,7 @@ CREATE TABLE `alive_ip`  (
   PRIMARY KEY (`id`) USING BTREE,
   INDEX `userid`(`userid`) USING BTREE,
   INDEX `datetime`(`datetime`) USING BTREE
-) ENGINE = MyISAM AUTO_INCREMENT = 1942191 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Fixed;
+) ENGINE = MyISAM AUTO_INCREMENT = 0 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Fixed;
 
 -- ----------------------------
 -- Table structure for announcement
@@ -42,7 +42,7 @@ CREATE TABLE `announcement`  (
   `content` longtext CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `markdown` longtext CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = MyISAM AUTO_INCREMENT = 6 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = MyISAM AUTO_INCREMENT = 0 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for auto
@@ -56,7 +56,7 @@ CREATE TABLE `auto`  (
   `datetime` bigint(20) NOT NULL,
   PRIMARY KEY (`id`) USING BTREE,
   INDEX `datetime`(`datetime`) USING BTREE
-) ENGINE = MyISAM AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = MyISAM AUTO_INCREMENT = 0 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for blockip
@@ -71,7 +71,7 @@ CREATE TABLE `blockip`  (
   INDEX `ip`(`ip`) USING BTREE,
   INDEX `nodeid`(`nodeid`) USING BTREE,
   INDEX `datetime`(`datetime`) USING BTREE
-) ENGINE = MyISAM AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Fixed;
+) ENGINE = MyISAM AUTO_INCREMENT = 0 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Fixed;
 
 -- ----------------------------
 -- Table structure for bought
@@ -87,7 +87,7 @@ CREATE TABLE `bought`  (
   `price` decimal(12, 2) NOT NULL,
   PRIMARY KEY (`id`) USING BTREE,
   INDEX `userid`(`userid`) USING BTREE
-) ENGINE = MyISAM AUTO_INCREMENT = 301 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = MyISAM AUTO_INCREMENT = 0 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for code
@@ -103,7 +103,7 @@ CREATE TABLE `code`  (
   `usedatetime` datetime(0) NOT NULL,
   PRIMARY KEY (`id`) USING BTREE,
   INDEX `userid`(`userid`) USING BTREE
-) ENGINE = MyISAM AUTO_INCREMENT = 350 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = MyISAM AUTO_INCREMENT = 0 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for coupon
@@ -117,7 +117,7 @@ CREATE TABLE `coupon`  (
   `shop` text CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `credit` int(11) NOT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = MyISAM AUTO_INCREMENT = 2 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = MyISAM AUTO_INCREMENT = 0 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for detect_list
@@ -130,7 +130,7 @@ CREATE TABLE `detect_list`  (
   `regex` longtext CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `type` int(11) NOT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = MyISAM AUTO_INCREMENT = 5 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = MyISAM AUTO_INCREMENT = 0 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for detect_log
@@ -144,7 +144,7 @@ CREATE TABLE `detect_log`  (
   `node_id` int(11) NOT NULL,
   PRIMARY KEY (`id`) USING BTREE,
   INDEX `user_id`(`user_id`) USING BTREE
-) ENGINE = MyISAM AUTO_INCREMENT = 9 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Fixed;
+) ENGINE = MyISAM AUTO_INCREMENT = 0 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Fixed;
 
 -- ----------------------------
 -- Table structure for disconnect_ip
@@ -156,7 +156,7 @@ CREATE TABLE `disconnect_ip`  (
   `ip` char(32) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `datetime` bigint(20) NOT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = MyISAM AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Fixed;
+) ENGINE = MyISAM AUTO_INCREMENT = 0 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Fixed;
 
 -- ----------------------------
 -- Table structure for email_verify
@@ -172,7 +172,7 @@ CREATE TABLE `email_verify`  (
   INDEX `email`(`email`) USING BTREE,
   INDEX `ip`(`ip`) USING BTREE,
   INDEX `code`(`code`) USING BTREE
-) ENGINE = MyISAM AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Fixed;
+) ENGINE = MyISAM AUTO_INCREMENT = 0 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Fixed;
 
 -- ----------------------------
 -- Table structure for link
@@ -191,7 +191,7 @@ CREATE TABLE `link`  (
   `method` text CHARACTER SET utf8 COLLATE utf8_general_ci,
   PRIMARY KEY (`id`) USING BTREE,
   INDEX `token`(`token`) USING BTREE
-) ENGINE = MyISAM AUTO_INCREMENT = 3505 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = MyISAM AUTO_INCREMENT = 0 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for login_ip
@@ -205,7 +205,7 @@ CREATE TABLE `login_ip`  (
   `type` int(11) NOT NULL,
   PRIMARY KEY (`id`) USING BTREE,
   INDEX `userid`(`userid`) USING BTREE
-) ENGINE = MyISAM AUTO_INCREMENT = 3988 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = MyISAM AUTO_INCREMENT = 0 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for payback
@@ -220,7 +220,7 @@ CREATE TABLE `payback`  (
   `datetime` bigint(20) NOT NULL,
   PRIMARY KEY (`id`) USING BTREE,
   INDEX `userid`(`userid`) USING BTREE
-) ENGINE = MyISAM AUTO_INCREMENT = 99 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Fixed;
+) ENGINE = MyISAM AUTO_INCREMENT = 0 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Fixed;
 
 -- ----------------------------
 -- Table structure for paylist
@@ -234,7 +234,7 @@ CREATE TABLE `paylist`  (
   `tradeno` text CHARACTER SET utf8 COLLATE utf8_general_ci,
   `datetime` bigint(20) NOT NULL DEFAULT 0,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = MyISAM AUTO_INCREMENT = 819 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = MyISAM AUTO_INCREMENT = 0 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for radius_ban
@@ -245,7 +245,7 @@ CREATE TABLE `radius_ban`  (
   `userid` int(11) NOT NULL,
   PRIMARY KEY (`id`) USING BTREE,
   INDEX `userid`(`userid`) USING BTREE
-) ENGINE = MyISAM AUTO_INCREMENT = 1826 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Fixed;
+) ENGINE = MyISAM AUTO_INCREMENT = 0 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Fixed;
 
 -- ----------------------------
 -- Table structure for relay
@@ -261,7 +261,7 @@ CREATE TABLE `relay`  (
   `priority` int(11) NOT NULL,
   PRIMARY KEY (`id`) USING BTREE,
   INDEX `user_id`(`user_id`, `source_node_id`, `dist_node_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 2 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
+) ENGINE = InnoDB AUTO_INCREMENT = 0 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
 
 -- ----------------------------
 -- Table structure for shop
@@ -277,7 +277,7 @@ CREATE TABLE `shop`  (
   `status` int(11) NOT NULL DEFAULT 1,
   `plan` varchar(11) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT 'A',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = MyISAM AUTO_INCREMENT = 14 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = MyISAM AUTO_INCREMENT = 0 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for speedtest
@@ -297,7 +297,7 @@ CREATE TABLE `speedtest`  (
   `cmccupload` char(32) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `cmccdownload` char(32) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = MyISAM AUTO_INCREMENT = 441 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Fixed;
+) ENGINE = MyISAM AUTO_INCREMENT = 0 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Fixed;
 
 -- ----------------------------
 -- Table structure for ss_invite_code
@@ -312,7 +312,7 @@ CREATE TABLE `ss_invite_code`  (
   PRIMARY KEY (`id`) USING BTREE,
   INDEX `user_id`(`user_id`) USING BTREE,
   INDEX `code`(`code`, `user_id`) USING BTREE
-) ENGINE = MyISAM AUTO_INCREMENT = 872 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = MyISAM AUTO_INCREMENT = 0 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for ss_node
@@ -343,7 +343,7 @@ CREATE TABLE `ss_node`  (
   PRIMARY KEY (`id`) USING BTREE,
   INDEX `type`(`type`, `sort`, `node_class`, `node_group`) USING BTREE,
   INDEX `node_ip`(`node_ip`) USING BTREE
-) ENGINE = MyISAM AUTO_INCREMENT = 81 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = MyISAM AUTO_INCREMENT = 0 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
 INSERT INTO `onepvp`.`ss_node`(`id`, `name`, `type`, `server`, `method`, `info`, `status`, `sort`, `custom_method`, `traffic_rate`, `node_class`, `node_speedlimit`, `node_connector`, `node_bandwidth`, `node_bandwidth_limit`, `bandwidthlimit_resetday`, `node_heartbeat`, `node_ip`, `node_group`, `custom_rss`, `mu_only`) VALUES (1, '统一验证登陆', 0, 'onepvp.com', 'radius', '统一登陆验证', '可用', 999, 0, 1, 0, 0.00, 0, 0, 0, 0, 0, NULL, 0, 0, 0);
 INSERT INTO `onepvp`.`ss_node`(`id`, `name`, `type`, `server`, `method`, `info`, `status`, `sort`, `custom_method`, `traffic_rate`, `node_class`, `node_speedlimit`, `node_connector`, `node_bandwidth`, `node_bandwidth_limit`, `bandwidthlimit_resetday`, `node_heartbeat`, `node_ip`, `node_group`, `custom_rss`, `mu_only`) VALUES (2, 'VPN 统一流量结算', 0, 'onepvp.com', 'radius', 'VPN 统一流量结算', '可用', 999, 0, 1, 0, 0.00, 0, 0, 0, 0, 0, NULL, 0, 0, 0);
@@ -361,7 +361,7 @@ CREATE TABLE `ss_node_info`  (
   PRIMARY KEY (`id`) USING BTREE,
   INDEX `node_id`(`node_id`) USING BTREE,
   INDEX `log_time`(`log_time`) USING BTREE
-) ENGINE = MyISAM AUTO_INCREMENT = 2151284 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = MyISAM AUTO_INCREMENT = 0 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for ss_node_online_log
@@ -375,7 +375,7 @@ CREATE TABLE `ss_node_online_log`  (
   PRIMARY KEY (`id`) USING BTREE,
   INDEX `node_id`(`node_id`) USING BTREE,
   INDEX `log_time`(`log_time`) USING BTREE
-) ENGINE = MyISAM AUTO_INCREMENT = 2155101 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Fixed;
+) ENGINE = MyISAM AUTO_INCREMENT = 0 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Fixed;
 
 -- ----------------------------
 -- Table structure for ss_password_reset
@@ -389,7 +389,7 @@ CREATE TABLE `ss_password_reset`  (
   `expire_time` int(11) NOT NULL,
   PRIMARY KEY (`id`) USING BTREE,
   INDEX `token`(`token`) USING BTREE
-) ENGINE = MyISAM AUTO_INCREMENT = 85 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Dynamic;
+) ENGINE = MyISAM AUTO_INCREMENT = 0 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for telegram_session
@@ -403,7 +403,7 @@ CREATE TABLE `telegram_session`  (
   `datetime` bigint(20) NOT NULL,
   PRIMARY KEY (`id`) USING BTREE,
   INDEX `session_content`(`session_content`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 10084 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Compact;
+) ENGINE = InnoDB AUTO_INCREMENT = 0 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Compact;
 
 -- ----------------------------
 -- Table structure for ticket
@@ -419,7 +419,7 @@ CREATE TABLE `ticket`  (
   `status` int(11) NOT NULL DEFAULT 1,
   PRIMARY KEY (`id`) USING BTREE,
   INDEX `rootid`(`rootid`, `userid`) USING BTREE
-) ENGINE = MyISAM AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = MyISAM AUTO_INCREMENT = 0 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for unblockip
@@ -431,7 +431,7 @@ CREATE TABLE `unblockip`  (
   `datetime` bigint(20) NOT NULL,
   `userid` bigint(20) NOT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = MyISAM AUTO_INCREMENT = 29 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = MyISAM AUTO_INCREMENT = 0 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for user
@@ -494,7 +494,7 @@ CREATE TABLE `user`  (
   PRIMARY KEY (`id`) USING BTREE,
   INDEX `email`(`email`, `telegram_id`) USING BTREE,
   INDEX `t`(`t`) USING BTREE
-) ENGINE = MyISAM AUTO_INCREMENT = 862 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = MyISAM AUTO_INCREMENT = 0 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for user_token
@@ -508,7 +508,7 @@ CREATE TABLE `user_token`  (
   `expire_time` int(11) NOT NULL,
   PRIMARY KEY (`id`) USING BTREE,
   INDEX `token`(`token`) USING BTREE
-) ENGINE = MyISAM AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = MyISAM AUTO_INCREMENT = 0 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Table structure for user_traffic_log
@@ -526,6 +526,6 @@ CREATE TABLE `user_traffic_log`  (
   PRIMARY KEY (`id`) USING BTREE,
   INDEX `user_id`(`user_id`, `node_id`) USING BTREE,
   INDEX `log_time`(`log_time`) USING BTREE
-) ENGINE = MyISAM AUTO_INCREMENT = 2012315 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = MyISAM AUTO_INCREMENT = 0 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 SET FOREIGN_KEY_CHECKS = 1;
