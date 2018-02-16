@@ -9,7 +9,7 @@
 
 -------------------
 
-仟佰星云 模板在线查看：www.qianbai.ml
+GamingZone NetSpeeder 原生魔改版V3：https://vip.gzns.tech
 
 -------------------
 ```
