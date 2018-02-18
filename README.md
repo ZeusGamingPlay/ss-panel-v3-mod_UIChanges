@@ -13,7 +13,7 @@ GamingZone NetSpeeder 原生魔改版V3：https://vip.gzns.tech
 
 -------------------
 ```
-git clone https://github.com/wxlost/ss-panel-v3-mod_UIChanges.git tmp && mv tmp/.git . && rm -rf tmp && git reset --hard
+git clone https://github.com/ZeusGamingPlay/ss-panel-v3-mod_UIChanges.git tmp && mv tmp/.git . && rm -rf tmp && git reset --hard
 ```
 ```
 php composer.phar install
