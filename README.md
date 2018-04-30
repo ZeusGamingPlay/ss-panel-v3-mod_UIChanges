@@ -1,4 +1,4 @@
-# 欢迎使用SS-panel-modV3再次修改版
+# 欢迎使用SS-panel-modV3再次修改版(BUG太多，目前已弃用）
 
 
 **ss-panel-v3-mod**是一款专为shadowsocks设计的web前端面板，再次感谢ss-panel-v3mod的工作人员，修改后的功能简介：
@@ -9,7 +9,7 @@
 
 -------------------
 
-GamingZone NetSpeeder 原生魔改版V3：https://vip.gzns.tech
+GamingZone NetSpeeder 原生魔改版V3：https://www.gzns.tech
 
 -------------------
 ```
